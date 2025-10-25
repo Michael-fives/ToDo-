@@ -9,29 +9,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="card">
-        <img src="../img/logo.png" alt="Logo" class="logo">
-        <h1>Unirse o crear tablero</h1>
-        <form id="boardForm">
-            <div class="radio-buttons">
-                <label>
-                    <input type="radio" name="mode" value="unirse" checked>
-                    Unirse a tablero
-                </label>
-                <label>
-                    <input type="radio" name="mode" value="crear">
-                    Crear tablero
-                </label>
-            </div>
-            <label for="tableroId">ID Tablero:</label>
-            <input type="number" id="tableroId" placeholder="Número entero">
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" placeholder="Contraseña">
-            <label for="confirmPassword">Confirmar contraseña:</label>
-            <input type="password" id="confirmPassword" placeholder="Confirmar contraseña">
-            <button type="submit">Continuar</button>
-        </form>
-    </div>
-    <script src="../js/rbtnJoc.js"></script>
+<div class="card">
+    <img src="../img/logo.png" alt="Logo" class="logo">
+    <h1>Unirse o crear tablero</h1>
+    <form id="boardForm">
+        <div class="radio-buttons">
+            <label>
+                <input type="radio" name="mode" value="unirse" checked>
+                Unirse a tablero
+            </label>
+            <label>
+                <input type="radio" name="mode" value="crear">
+                Crear tablero
+            </label>
+        </div>
+
+        <label for="tableroId">ID Tablero:</label>
+        <input type="number" id="tableroId" placeholder="Número entero" name="tableroId">
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" placeholder="Contraseña" name="password">
+
+        <label for="confirmPassword">Confirmar contraseña:</label>
+        <input type="password" id="confirmPassword" placeholder="Confirmar contraseña" name="confirmPassword">
+
+        <button type="submit">Continuar</button>
+    </form>
+</div>
+
+<script src="../js/jocBoard.js"></script>
+<script src="../js/rbtnJoc.js"></script>
 </body>
 </html>
