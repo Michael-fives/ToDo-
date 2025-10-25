@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo! - Tablero</title>
+    <link rel="stylesheet" href="../styles/board.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="../img/logo.png" alt="logo" class="logo">
+    <div class="superior-bar" >
+        <div class="hecho-section">
+            <p>Hecho:</p>
+        </div>
+        <div class="haciendo-section">
+            <p>Haciendo:</p>
+        </div>
+        <div class="pendiente-section">
+            <p>Pendiente:</p>
+        </div>
+        <div class="ideas-section">
+            <p>Ideas:</p>
+        </div>
+    </div>
+    <div class="card-columns">
+        <!-- Las tarjetas se agregarán aquí dinámicamente -->
+        <div class="hecho-column" id="column1">  
+        <!-- tarjetas de ejemplo para edicion-->
+            <div class="card">
+                <h2>Título de la tarjeta</h2>
+                <p>Descripción de la tarjeta.</p>
+                <button>&times;</button>
+            </div>
+        </div>
+        <div class="haciendo-column" id="column2">
+            <div class="card">
+                <h2>Título de la tarjeta</h2>
+                <p>Descripción de la tarjeta.</p>
+                <div>
+                    <button class="done">&#10003;</button>
+                    <button>&times;</button>
+                </div>
+            </div>
+        </div>
+        <div class="pendiente-column" id="column3">
+            <div class="card">
+                <h2>Título de la tarjeta</h2>
+                <p>Descripción de la tarjeta.</p>
+                <div>
+                    <button class="next">&#8592;</button>
+                    <button>&times;</button>
+                </div>
+            </div>
+        </div>
+        <div class="ideas-column" id="column4">
+            <div class="card">
+                <h2>Título de la tarjeta</h2>
+                <p>Descripción de la tarjeta.</p>
+                <div>
+                    <button class="next">&#8592;</button>
+                    <button>&times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="add-button" id="showModal">+</button>
+    <div class="add-window" id="modal" style="display: none;">
+        <h2>Agregar nueva tarjeta</h2>
+        <form id="addCardForm">
+            <label for="cardTitle">Título:</label>
+            <input type="text" id="cardTitle" required>
+            <label for="cardDescription">Descripción:</label>
+            <textarea id="cardDescription" required></textarea>
+            <div class="form-buttons">
+                <button type="submit" class="submit">Agregar</button>
+                <button type="button" id="closeModal">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <script src="../js/addWindow.js"></script>
+</body>
+</html>

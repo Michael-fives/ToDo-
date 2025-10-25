@@ -1,0 +1,19 @@
+.boardForm {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 0.7em;
+    border: none;
+    border-radius: 2em;
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.card {
+    height: 35em;
+}
